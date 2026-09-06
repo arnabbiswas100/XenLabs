@@ -1,379 +1,575 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xen-Labs — Build Your Website with our help</title>
+  <meta name="description"
+    content="Tell us what your business needs, and we'll design and build a professional website tailored specifically to you. Fast, beautiful, made to convert.">
 
-    <!-- Makes the website responsive on phones -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Xen-Labs — Build Your Website with our help</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Our CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION BAR
-    ========================== -->
+  <!-- Scroll progress bar -->
+  <div id="scroll-bar"></div>
 
-    <header class="navbar">
 
-        <div class="logo">
-            Xen<span>-Labs</span>
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================= -->
+
+  <header class="navbar" id="navbar">
+    <div class="logo">Xen<span>-Labs</span></div>
+    <nav>
+      <a href="#features" id="nav-features">What We Do</a>
+      <a href="#how-it-works" id="nav-how">How It Works</a>
+      <a href="#contact" id="nav-contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-button ripple-host mag-btn" id="nav-cta">
+      Get Started
+    </a>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================= -->
+
+    <section class="hero" id="hero">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Taking new clients — slots open
         </div>
 
-        <nav>
-            <a href="#features">What We Do</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <a href="#contact" class="nav-button">
-            Get Started
-        </a>
-
-    </header>
-
-
-    <main>
-
-        <!-- =========================
-             HERO SECTION
-        ========================== -->
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">
-                    You Ask. We Build.
-                </p>
-
-                <h1>
-                    Your Business Deserves
-                    <span>An Website that works</span>
-                </h1>
-
-                <p class="hero-description">
-                Tell us what your business needs, and we'll design and build
-                a professional website tailored specifically to you.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#contact" class="primary-button">
-                        Get your Website
-                    </a>
-
-                    <a href="#features" class="secondary-button">
-                        Why Choose Us?
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- Placeholder hero image -->
-
-            <div class="hero-image">
-
-                <img
-                    src="images/hero.png"
-                    alt="Xen-Labs Preview"
-                >
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             FEATURES
-        ========================== -->
-
-        <section id="features" class="section">
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    What We DO
-                </p>
-
-                <h2>
-                    Everything your business needs online.
-                </h2>
-
-                <p>
-                From simple business websites to custom online experiences,
-                we build websites around your goals, your brand and your customers.
-                </p>
-
-            </div>
-
-
-            <div class="features-grid">
-
-                <article class="feature-card">
-
-                    <div class="feature-icon">
-                        ⚡
-                    </div>
-
-                    <h3>
-                        Business Websites
-                    </h3>
-
-                    <p>
-                    Professional websites designed to showcase your business,
-                    services, products and contact information.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <div class="feature-icon">
-                        🎨
-                    </div>
-
-                    <h3>
-                        Custom Design
-                    </h3>
-
-                    <p>
-                    Your website is designed around your business instead of
-                    forcing your business into a generic template.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <div class="feature-icon">
-                        📱
-                    </div>
-
-                    <h3>
-                        Responsive & Fast
-                    </h3>
-
-                    <p>
-                    Websites that look great and work smoothly across phones,
-                    tablets and desktop computers.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             HOW IT WORKS
-        ========================== -->
-
-        <section id="how-it-works" class="section workflow-section">
-
-            <div class="section-heading">
-
-                <p class="eyebrow">
-                    HOW IT WORKS
-                </p>
-
-                <h2>
-                    From idea to website in three steps.
-                </h2>
-
-            </div>
-
-
-            <div class="steps">
-
-                <article class="step">
-
-                    <div class="step-number">
-                        01
-                    </div>
-
-                    <h3>
-                        Tell Us About Your Business
-                    </h3>
-
-                    <p>
-                    Tell us about your business, what you want your website
-                    to do and what kind of design you're looking for.
-                    </p>
-
-                </article>
-
-
-                <article class="step">
-
-                    <div class="step-number">
-                        02
-                    </div>
-
-                    <h3>
-                        We Design & Build
-                    </h3>
-
-                    <p>
-                    We turn your requirements into a professional website
-                    designed specifically for your business.
-                    </p>
-
-                </article>
-
-
-                <article class="step">
-
-                    <div class="step-number">
-                        03
-                    </div>
-
-                    <h3>
-                        Review & Launch
-                    </h3>
-
-                    <p>
-                    Review the website, request changes and get your
-                    finished website ready to go online.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             IMAGE / SHOWCASE
-        ========================== -->
-
-        <section class="showcase">
-
-            <div class="showcase-image">
-
-                <img
-                    src="images/showcase.png"
-                    alt="Xen-Labs Showcase"
-                >
-
-            </div>
-
-            <div class="showcase-content">
-
-                <p class="eyebrow">
-                    MADE FOR REAL BUSINESS
-                </p>
-
-                <h2>
-                    A website built around
-                    your business.
-                </h2>
-
-                <p>
-                Every business is different. That's why we don't believe
-                your website should look like everyone else's.
-
-                We create websites based on your business, your audience
-                and the way you want your customers to experience your brand.
-                </p>
-
-                <a href="#contact" class="primary-button">
-                    Talk to Us
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section id="contact" class="contact-section">
-
-            <div class="contact-content">
-
-                <p class="eyebrow">
-                    LET'S TALK
-                </p>
-
-                <h2>
-                    Ready to build your website?
-                </h2>
-
-                <p>
-                    Tell us about your business and we'll help
-                    you get started.
-                </p>
-
-            </div>
-
-
-            <div class="contact-info">
-
-                <div>
-                    <strong>Email</strong>
-                    <a href="mailto:arnabmukhar@gmail.com">
-                        arnabmukhar@gmail.com
-                    </a>
-                </div>
-
-                <div>
-                    <strong>Phone / WhatsApp</strong>
-                    <a href="https://wa.me/919547934320" target="_blank">
-                        +91 95479 34320
-                    </a>
-                </div>
-
-                <div>
-                    <strong>Office</strong>
-                    <p>Bhagalpur, Bihar, India</p>
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>
-            © 2026 XEN LABS. All rights reserved.
+        <p class="eyebrow">You Ask ==> We Build</p>
+
+        <h1 id="hero-h1">
+          Your Business Deserves
+          <span>A Website that works</span>
+        </h1>
+
+        <p class="hero-description" id="hero-desc">
+          Tell us what your business needs, and we'll design and build
+          a professional website tailored specifically to you.
         </p>
 
-        <div>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
+        <div class="hero-buttons" id="hero-btns">
+          <a href="#contact" class="primary-button ripple-host mag-btn" id="hero-cta-primary">
+            Get your Website
+          </a>
+          <a href="#features" class="secondary-button ripple-host mag-btn" id="hero-cta-secondary">
+            Why Choose Us?
+          </a>
         </div>
 
-    </footer>
+        <div class="hero-stats" id="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-count="50" data-suffix="+">50+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-raw="3 Days">3 Days</span>
+            <span class="stat-label">Avg. Delivery</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="100" data-suffix="%">100%</span>
+            <span class="stat-label">Satisfaction</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-image" id="hero-image-wrap">
+        <div class="hero-image-inner" id="hero-tilt">
+          <img src="images/hero.png" alt="Xen-Labs — Example website preview" id="hero-img" loading="eager">
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ============================================================
+         FEATURES
+    ============================================================= -->
+
+    <section id="features" class="scene">
+      <div class="scene-inner">
+
+        <div class="section-heading" id="features-heading">
+          <p class="eyebrow">What We Do</p>
+          <h2>Everything Your Business <span class="highlight"> Needs To Be Online.</span></h2>
+          <p>
+            From simple business websites to custom online experiences,
+            we build websites around your goals, your brand and your customers.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="card-wrap" id="card-wrap-1">
+            <article class="feature-card" id="card-1">
+              <div class="feature-icon">⚡</div>
+              <h3>Business Websites</h3>
+              <p>
+                Professional websites designed to showcase your business,
+                services, products and contact information.
+              </p>
+            </article>
+          </div>
+
+          <div class="card-wrap" id="card-wrap-2">
+            <article class="feature-card" id="card-2">
+              <div class="feature-icon">🎨</div>
+              <h3>Custom Design</h3>
+              <p>
+                Your website is designed around your business instead of
+                forcing your business into a generic template.
+              </p>
+            </article>
+          </div>
+
+          <div class="card-wrap" id="card-wrap-3">
+            <article class="feature-card" id="card-3">
+              <div class="feature-icon">📱</div>
+              <h3>Responsive &amp; Fast</h3>
+              <p>
+                Websites that look great and work smoothly across phones,
+                tablets and desktop computers.
+              </p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         HOW IT WORKS
+    ============================================================= -->
+
+    <div id="how-it-works" class="workflow-scene">
+      <div class="workflow-inner">
+
+        <div class="section-heading" id="steps-heading">
+          <p class="eyebrow">How It Works</p>
+          <h2>From idea to website in <span class="highlight">three steps.</span></h2>
+        </div>
+
+        <div class="steps">
+
+          <div class="step-wrap" id="step-wrap-1">
+            <article class="step" id="step-1">
+              <div class="step-number">01</div>
+              <h3>Tell Us About Your Business</h3>
+              <p>
+                Tell us about your business, what you want your website
+                to do and what kind of design you're looking for.
+              </p>
+            </article>
+          </div>
+
+          <div class="step-wrap" id="step-wrap-2">
+            <article class="step" id="step-2">
+              <div class="step-number">02</div>
+              <h3>We Design &amp; Build</h3>
+              <p>
+                We turn your requirements into a professional website
+                designed specifically for your business.
+              </p>
+            </article>
+          </div>
+
+          <div class="step-wrap" id="step-wrap-3">
+            <article class="step" id="step-3">
+              <div class="step-number">03</div>
+              <h3>Review &amp; Launch</h3>
+              <p>
+                Review the website, request changes and get your
+                finished website ready to go online.
+              </p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============================================================
+         SHOWCASE
+    ============================================================= -->
+
+    <section class="showcase">
+
+      <div class="showcase-image" id="showcase-img-wrap">
+        <img src="images/showcase.png" alt="Xen-Labs Showcase — example client website" id="showcase-img"
+          loading="lazy">
+      </div>
+
+      <div class="showcase-content" id="showcase-content">
+        <p class="eyebrow">Made for Real Business</p>
+        <h2>A website built around your business.</h2>
+        <p>
+          Every business is different. That's why we don't believe
+          your website should look like everyone else's.
+        </p>
+        <p>
+          We create websites based on your business, your audience
+          and the way you want your customers to experience your brand.
+        </p>
+        <a href="#contact" class="primary-button ripple-host mag-btn" id="showcase-cta">
+          Talk to Us
+        </a>
+      </div>
+
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================= -->
+
+    <section id="contact" class="contact-section">
+
+      <div class="contact-content">
+        <p class="eyebrow">Let's Talk</p>
+        <h2>Ready to build your website?</h2>
+        <p>
+          Tell us about your business and we'll help
+          you get started. We usually respond within a few hours.
+        </p>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-info-item" id="contact-email">
+          <strong>Email</strong>
+          <a href="mailto:arnabmukhar@gmail.com">arnabmukhar@gmail.com</a>
+        </div>
+        <div class="contact-info-item" id="contact-phone">
+          <strong>Phone / WhatsApp</strong>
+          <a href="https://wa.me/919547934320" target="_blank" rel="noopener">
+            +91 95479 34320
+          </a>
+        </div>
+        <div class="contact-info-item" id="contact-office">
+          <strong>Office</strong>
+          <p>Bhagalpur, Bihar, India</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================= -->
+
+  <footer>
+    <p>© 2026 Xen Labs. All rights reserved.</p>
+    <div>
+      <a href="#" id="footer-privacy">Privacy</a>
+      <a href="#" id="footer-terms">Terms</a>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       ANIMATION ENGINE — Optimised, no custom cursor
+  ============================================================= -->
+
+  <script>
+    (() => {
+      'use strict';
+
+      /* ── Helpers ── */
+      const $ = id => document.getElementById(id);
+      const $$ = sel => document.querySelectorAll(sel);
+      const clamp = (v, lo, hi) => v < lo ? lo : v > hi ? hi : v;
+      const easeOut3 = t => 1 - Math.pow(1 - t, 3);
+
+
+      /* ══════════════════════════════════════════════════
+         WORD-SPLIT HERO HEADING
+      ══════════════════════════════════════════════════ */
+      const h1 = $('hero-h1');
+      if (h1) {
+        const frag = document.createDocumentFragment();
+
+        h1.childNodes.forEach(node => {
+          if (node.nodeType === Node.TEXT_NODE) {
+            node.textContent.trim().split(/\s+/).forEach(word => {
+              if (!word) return;
+              const outer = document.createElement('span');
+              outer.className = 'word';
+              const inner = document.createElement('span');
+              inner.className = 'word-inner';
+              inner.textContent = word;
+              outer.appendChild(inner);
+              frag.appendChild(outer);
+              frag.appendChild(document.createTextNode(' '));
+            });
+          } else if (node.nodeName === 'SPAN') {
+            // Keep gradient <span> INTACT — splitting breaks -webkit-background-clip:text
+            const cloned = node.cloneNode(true);
+            cloned.classList.add('accent-span');
+            const outer = document.createElement('span');
+            outer.className = 'word';
+            const inner = document.createElement('span');
+            inner.className = 'word-inner';
+            inner.appendChild(cloned);
+            outer.appendChild(inner);
+            frag.appendChild(outer);
+          }
+        });
+
+        h1.innerHTML = '';
+        h1.appendChild(frag);
+
+        // Double-rAF ensures styles have been applied before triggering transition
+        requestAnimationFrame(() => requestAnimationFrame(() => h1.classList.add('words-visible')));
+      }
+
+      setTimeout(() => {
+        $('hero-desc')?.classList.add('visible');
+        $('hero-btns')?.classList.add('visible');
+        $('hero-stats')?.classList.add('visible');
+      }, 150);
+
+
+      /* ══════════════════════════════════════════════════
+         INTERSECTION OBSERVERS — fire-once, minimal overhead
+      ══════════════════════════════════════════════════ */
+      const revealIO = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);   // never re-fires: zero ongoing cost
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+
+      $$('.card-wrap, .step-wrap, .showcase-image, .showcase-content, .contact-section')
+        .forEach(el => revealIO.observe(el));
+
+      const lineIO = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          e.target.querySelector('.highlight')?.classList.add('line-visible');
+          obs.unobserve(e.target);
+        });
+      }, { threshold: 0.3 });
+
+      $$('.section-heading').forEach(el => lineIO.observe(el));
+
+
+      /* ══════════════════════════════════════════════════
+         COUNTER ANIMATION — lazy, rAF only during count-up
+      ══════════════════════════════════════════════════ */
+      const counterIO = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const total = parseInt(el.dataset.count, 10);
+          const suf = el.dataset.suffix || '';
+          if (isNaN(total)) return;
+
+          const start = performance.now();
+          const dur = 1400;
+          const tick = now => {
+            const t = Math.min((now - start) / dur, 1);
+            el.textContent = Math.round(easeOut3(t) * total) + suf;
+            if (t < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          obs.unobserve(el);
+        });
+      }, { threshold: 0.5 });
+
+      $$('.stat-number[data-count]').forEach(el => counterIO.observe(el));
+
+
+      /* ══════════════════════════════════════════════════
+         3D TILT — ZERO rAF (CSS transition handles smoothing)
+  
+         How it works:
+         - mouseenter: set transitionDuration=0ms so transform follows cursor instantly
+         - mousemove:  write transform directly (1 DOM write per event, no loop)
+         - mouseleave: restore transitionDuration — CSS 400ms spring handles return
+      ══════════════════════════════════════════════════ */
+      const setupTilt = (el, maxTilt = 10, scaleVal = 1.02) => {
+        el.addEventListener('mouseenter', () => {
+          el.style.transitionDuration = '0ms';
+        });
+
+        el.addEventListener('mousemove', e => {
+          const r = el.getBoundingClientRect();
+          const tx = ((e.clientX - r.left) / r.width - 0.5) * maxTilt * 2;
+          const ty = ((e.clientY - r.top) / r.height - 0.5) * maxTilt * 2;
+          el.style.transform =
+            `perspective(900px) rotateX(${-ty}deg) rotateY(${tx}deg) scale(${scaleVal})`;
+        }, { passive: true });
+
+        el.addEventListener('mouseleave', () => {
+          el.style.transitionDuration = ''; // restore CSS class value (400ms spring)
+          el.style.transform = '';
+        });
+      };
+
+      if (window.matchMedia('(hover: hover)').matches) {
+        const heroTilt = $('hero-tilt');
+        if (heroTilt) setupTilt(heroTilt, 8, 1.02);
+        $$('.feature-card').forEach(c => setupTilt(c, 6, 1.015));
+        $$('.step').forEach(c => setupTilt(c, 5, 1.025));
+      }
+
+
+      /* ══════════════════════════════════════════════════
+         SPOTLIGHT on FEATURE CARDS — CSS custom property, no rAF
+      ══════════════════════════════════════════════════ */
+      $$('.feature-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+          card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+        }, { passive: true });
+      });
+
+
+      /* ══════════════════════════════════════════════════
+         MAGNETIC BUTTONS — ZERO rAF (same CSS-transition pattern as tilt)
+      ══════════════════════════════════════════════════ */
+      if (window.matchMedia('(hover: hover)').matches) {
+        $$('.mag-btn').forEach(btn => {
+          btn.addEventListener('mouseenter', () => {
+            btn.style.transitionDuration = '0ms';
+          });
+
+          btn.addEventListener('mousemove', e => {
+            const r = btn.getBoundingClientRect();
+            const tx = (e.clientX - r.left - r.width / 2) * 0.28;
+            const ty = (e.clientY - r.top - r.height / 2) * 0.28;
+            btn.style.transform = `translate(${tx}px, ${ty}px)`;
+          }, { passive: true });
+
+          btn.addEventListener('mouseleave', () => {
+            btn.style.transitionDuration = ''; // CSS spring-back takes over
+            btn.style.transform = '';
+          });
+        });
+      }
+
+
+      /* ══════════════════════════════════════════════════
+         RIPPLE
+      ══════════════════════════════════════════════════ */
+      $$('.ripple-host').forEach(el => {
+        el.addEventListener('pointerdown', e => {
+          const r = el.getBoundingClientRect();
+          const size = Math.max(r.width, r.height) * 1.5;
+          const rip = document.createElement('span');
+          rip.className = 'ripple';
+          Object.assign(rip.style, {
+            width: size + 'px',
+            height: size + 'px',
+            left: (e.clientX - r.left - size / 2) + 'px',
+            top: (e.clientY - r.top - size / 2) + 'px',
+          });
+          el.appendChild(rip);
+          rip.addEventListener('animationend', () => rip.remove(), { once: true });
+        });
+      });
+
+
+      /* ══════════════════════════════════════════════════
+         SCROLL-DRIVEN UPDATES — ticking pattern
+  
+         BEFORE: requestAnimationFrame(mainLoop) ran every frame at 60fps,
+                 even when nothing was moving. ~16ms of JS every 16ms = idle waste.
+  
+         AFTER:  A passive 'scroll' event fires the work via one rAF.
+                 The `ticking` flag coalesces multiple scroll events into a
+                 single rAF callback. When idle, ZERO JS runs per frame.
+      ══════════════════════════════════════════════════ */
+      const navbar = $('navbar');
+      const scrollBar = $('scroll-bar');
+      const heroWrapper = $('hero-wrapper');
+      const heroBg = $('hero-bg');
+      const heroEl = $('hero');
+      const heroImgWrap = $('hero-image-wrap');
+
+      let ticking = false;
+
+      const updatePage = () => {
+        const sy = window.scrollY;
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+
+        /* Scroll progress bar */
+        scrollBar.style.width = (sy / max * 100) + '%';
+
+        /* Navbar glass state */
+        navbar.classList.toggle('scrolled', sy > 40);
+
+        ticking = false;
+      };
+
+      /* Schedule exactly one rAF per scroll burst, then reset */
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(updatePage);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      updatePage(); // set initial state on load
+
+
+      /* ══════════════════════════════════════════════════
+         ACTIVE NAV LINK
+      ══════════════════════════════════════════════════ */
+      const navLinks = $$('nav a[href^="#"]');
+
+      const navIO = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          navLinks.forEach(a => a.removeAttribute('aria-current'));
+          document.querySelector(`nav a[href="#${e.target.id}"]`)
+            ?.setAttribute('aria-current', 'page');
+        });
+      }, { threshold: 0.45 });
+
+      $$('section[id]').forEach(s => navIO.observe(s));
+
+
+      /* ══════════════════════════════════════════════════
+         SMOOTH SCROLL
+      ══════════════════════════════════════════════════ */
+      navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          const target = document.querySelector(link.getAttribute('href'));
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+    })();
+  </script>
+
+
 
 </body>
 
 </html>
-
-
