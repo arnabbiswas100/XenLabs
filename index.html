@@ -409,30 +409,32 @@
          - mousemove:  write transform directly (1 DOM write per event, no loop)
          - mouseleave: restore transitionDuration — CSS 400ms spring handles return
       ══════════════════════════════════════════════════ */
-      const setupTilt = (el, maxTilt = 10, scaleVal = 1.02) => {
-        el.addEventListener('mouseenter', () => {
-          el.style.transitionDuration = '0ms';
+      const setupTilt = (listener, target, maxTilt = 10, scaleVal = 1.02) => {
+        target = target || listener;
+        listener.addEventListener('mouseenter', () => {
+          target.style.transitionDuration = '0ms';
         });
 
-        el.addEventListener('mousemove', e => {
-          const r = el.getBoundingClientRect();
+        listener.addEventListener('mousemove', e => {
+          const r = listener.getBoundingClientRect();
           const tx = ((e.clientX - r.left) / r.width - 0.5) * maxTilt * 2;
           const ty = ((e.clientY - r.top) / r.height - 0.5) * maxTilt * 2;
-          el.style.transform =
+          target.style.transform =
             `perspective(900px) rotateX(${-ty}deg) rotateY(${tx}deg) scale(${scaleVal})`;
         }, { passive: true });
 
-        el.addEventListener('mouseleave', () => {
-          el.style.transitionDuration = ''; // restore CSS class value (400ms spring)
-          el.style.transform = '';
+        listener.addEventListener('mouseleave', () => {
+          target.style.transitionDuration = ''; // restore CSS class value (400ms spring)
+          target.style.transform = '';
         });
       };
 
       if (window.matchMedia('(hover: hover)').matches) {
+        const heroWrap = $('hero-image-wrap');
         const heroTilt = $('hero-tilt');
-        if (heroTilt) setupTilt(heroTilt, 8, 1.02);
-        $$('.feature-card').forEach(c => setupTilt(c, 6, 1.015));
-        $$('.step').forEach(c => setupTilt(c, 5, 1.025));
+        if (heroWrap && heroTilt) setupTilt(heroWrap, heroTilt, 8, 1.02);
+        $$('.feature-card').forEach(c => setupTilt(c, c, 6, 1.015));
+        $$('.step').forEach(c => setupTilt(c, c, 5, 1.025));
       }
 
 
